@@ -1,0 +1,92 @@
+.projects{
+    padding: 40px 400px;
+    height: 930px;
+    display: flex;
+    flex-direction: column;
+    background-color: #007EA7;
+}
+.project{
+    height: 33.3%;
+    width: 100%;
+    display: flex;
+    margin: 5px 0;
+}
+.project-img{
+    width: 375px;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+
+.one{
+    background-image: url("https://i.ibb.co/7bnPrKX/RGB.jpg");
+}
+.two{
+    background-image: url("https://dummyimage.com/500x500.gif");
+}
+
+.three{
+    background-image: url("https://dummyimage.com/500x500.gif");
+}
+
+header h1{
+    margin-bottom: 10px;
+    text-decoration: underline ;
+}
+
+.project-desc{
+    width: 100%;
+    padding-left: 20px;
+}
+
+.project-desc h1{
+    padding-top: 10px;
+    width: fit-content;
+}
+
+.project-desc p{
+    margin-top: 10px;
+}
+
+.project-desc a:link, a:visited {
+    color: black;
+    text-decoration: underline;
+    cursor: auto;
+}
+  
+  .project-desc  a:link:active, a:visited:active {
+    color: black;
+}
+
+
+
+@media screen and (max-width: 1500px){
+    .projects{
+        margin-top: 45px;
+        padding: 0 200px;
+        height: 1035px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .projects{
+        margin-top: 45px;
+        padding: 0 50px;
+        height: 1035px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .projects{
+        margin-top: 90px;
+        padding: 0;
+        height: 1035px;
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #00A8E8;
+    height: 45px;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+span.right a{
+    margin: 10px;
+}
+@media screen and (max-width: 600px){
+    nav{
+        height: 90px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav span.left{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    nav span.right{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+
+/* color palette: */
+/* https://coolors.co/00171f-003459-007ea7-00a8e8-5cd9ff */

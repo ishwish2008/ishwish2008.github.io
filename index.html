@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ishwish</title>
+    <!-- stylesheets -->
+    <link href="assets/css/header-styles.css" rel="stylesheet" >
+    <link href="assets/css/main-styles.css" rel="stylesheet" >
+    <link href="assets/css/about-styles.css" rel="stylesheet" >
+    <link href="assets/css/projects-styles.css" rel="stylesheet" >
+    <link href="assets/css/contact-syles.css" rel="stylesheet">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@100;400;500&display=swap" rel="stylesheet">
+    <!-- js -->
+</head>
+<body>
+    <!-- navbar -->
+    <nav>
+        <span class="left">
+            <a href="index.html">Ishwish</a>
+        </span>
+        <span class="right">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </span>
+    </nav>
+    <!-- main -->
+    <div class="main">
+        <div class="content">
+            <h1>Ishaan Dabhade</h1>
+            <h3>web-dev aprentice</h3>
+            <a href="#contact"><button>contact me</button></a>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about" class="about">
+        <div class="image">
+
+        </div>
+        <div class="about-text">
+            <header><h1>About Me</h1></header>
+            <p>Hi i'm Ishaan Dabhde!</p>
+            <p>I'm a 7<sup>th</sup> grader going to pearson ranch middle school. I like to make simple webpages like this one. when i am not coding i like to:</p>
+            <ul>
+                <li>Read</li>
+                <li>Do karate</li>
+                <li>Play with my little brother</li>
+                <li>Fly!</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- projects -->
+    <div id="projects" class="projects">
+        <header>
+            <h1>Projects</h1>
+        </header>
+        <div class="project">
+            <div class="project-img one"></div>
+            <div class="project-desc">
+                <a href="projects/displays/RGB-display.html"><h1>The Great RGB color Game</h1></a>
+                <p>The Color Game is all about picking the right colour from the randomly genrated square's of colors. The easy mode consits of only 3 squares of random colors to guess. The hard mode consits of 6 squares of random colors to guess. This is the default mode of play.</p>
+            </div>
+        </div>
+        <div class="project different">
+            <div class="project-desc"></div>
+            <div class="project-img two">
+                
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-img three">
+                
+            </div>
+            <div class="project-desc"></div>
+        </div>
+    </div>
+
+    <div id="contact" class="contact">
+        <div class="container">
+            <header>
+                <h1>Contact</h1>
+            </header>
+            <form action="https://formspree.io/xqkynqeg" method="POST">
+                <label>
+                    Your Name:
+                    <input type="text" name="name" class="input">
+                </label>
+                <label>
+                    Your Email:
+                    <input type="email" name="_replyto" class="input">
+                </label>
+                <label>
+                    Message:
+                    <textarea type="text" name="message" class="input" cols="500"></textarea>
+                </label>
+                <button type="submit">Send!</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
