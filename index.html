@@ -8,63 +8,94 @@
     <meta name="application-name" content="Ishwish2008">
     <title>Ishwish</title>
     <!-- stylesheets -->
-    <link href="assets/css/header-styles.css" rel="stylesheet" >
+    <!-- <link href="assets/css/header-styles.css" rel="stylesheet" >
     <link href="assets/css/main-styles.css" rel="stylesheet" >
     <link href="assets/css/about-styles.css" rel="stylesheet" >
     <link href="assets/css/projects-styles.css" rel="stylesheet" >
-    <link href="assets/css/contact-syles.css" rel="stylesheet">
+    <link href="assets/css/contact-syles.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css" integrity="sha512-HqxHUkJM0SYcbvxUw5P60SzdOTy/QVwA1JJrvaXJv4q7lmbDZCmZaqz01UPOaQveoxfYRv1tHozWGPMcuTBuvQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@100;400;500&display=swap" rel="stylesheet">
     <!-- js -->
 </head>
 <body>
     <!-- navbar -->
-    <nav>
-        <span class="left">
-            <a href="index.html">Ishwish</a>
-        </span>
-        <span class="right">
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </span>
-    </nav>
+    <nav class="navbar has-background-link is-dark" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item nav-gradient nav-tl" href="/">
+            <span class="title is-5 has-text-weight-bold">ishwish</span>
+          </a>
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+      
+            <a class="navbar-item has-text-white" href="#about">
+              About
+            </a>
+      
+            <div class="navbar-item has-dropdown has-text-white is-hoverable">
+              <a class="navbar-link has-text-white" href="#projects">
+                Projects
+              </a>
+      
+              <div class="navbar-dropdown has-background-link is-dark">
+                <a class="navbar-item has-text-white" href="/the-great-rgb-color-game/">
+                  The Great Color Game
+                </a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="navbar-end">
+            <a class="navbar-item has-text-white" href="#contact">
+                Contact
+              </a>
+          </div>
+        </div>
+      </nav>
     <!-- main -->
-    <div class="main">
-        <div class="content">
-            <h1>Ishaan Dabhade</h1>
-            <h3>web-dev aprentice</h3>
-            <a href="#contact"><button>contact me</button></a>
+    <div class="hero is-large mainbackground">
+        <div class="hero-body has-text-centered">
+            <h1 class="title is-1 has-text-white">Ishaan Dabhade</h1>
+            <h3 class="subtitle is-3 has-text-white">web-dev apprentice</h3>
+            <a href="#contact"><button class="button is-medium is-primary has-text-white">contact me</button></a>
         </div>
     </div>
     <!-- about -->
-    <div id="about" class="about">
-        <div class="image">
-
+    <div id="about" class="hero is-medium has-background-link">
+        <div class="about-text column is-offset-2">
+            <h1 class="title is-2 has-text-weight-bold has-text-white mt-4">About Me</h1>
+            <p class="subtitle is-5 has-text-white">Hi i'm Ishaan Dabhde!</p>
+            <div class="column is-7">
+            <p class="subtitle is-5 mt-4 has-text-white"><span class="nav-gradient">I'm a 9<sup>th</sup> grader</span> going to Westwood High School. I like to make simple webpages like this one. when i am not coding i like to:</p>
+            <ol class="has-text-white">
+                <li>Read<span class="ml-1 icon is-small"><i class="fa-solid fa-book"></i></span></li>
+                <li>Play with my little brother<span class="ml-1 icon is-small"><i class="fa-solid fa-sun"></i></span></li>
+                <li>Fly!<span class="ml-1 icon is-small"><i class="fa-brands fa-fly"></i></span></li>
+            </ol>
         </div>
-        <div class="about-text">
-            <header><h1>About Me</h1></header>
-            <p>Hi i'm Ishaan Dabhde!</p>
-            <p>I'm a 7<sup>th</sup> grader going to pearson ranch middle school. I like to make simple webpages like this one. when i am not coding i like to:</p>
-            <ul>
-                <li>Read</li>
-                <li>Do karate</li>
-                <li>Play with my little brother</li>
-                <li>Fly!</li>
-            </ul>
         </div>
     </div>
 
     <!-- projects -->
-    <div id="projects" class="projects">
-        <header>
-            <h1>Projects</h1>
-        </header>
-        <div class="project">
+    <div id="projects" class="projects hero is-large has-background-info">
+        <br>
+        <div class="about-text column is-offset-2">
+        <h1 class="title is-2 has-text-white">Projects</h1>
+        <div class="card has-background-primary" style="padding: 2rem; max-width: 50vw">
             <div class="project-img one"></div>
             <div class="project-desc">
-                <a href="projects/displays/RGB-display.html"><h1>The Great RGB color Game</h1></a>
-                <p>The Color Game is all about picking the right colour from the randomly genrated square's of colors. The easy mode consits of only 3 squares of random colors to guess. The hard mode consits of 6 squares of random colors to guess. This is the default mode of play.</p>
+                <a href="projects/displays/RGB-display.html"><h1 class="title is-3 has-text-white">The Great RGB color Game</h1></a>
+                <p class="subtitle is-5 has-text-white">The Color Game is all about picking the right colour from the randomly genrated square's of colors. The easy mode consits of only 3 squares of random colors to guess. The hard mode consits of 6 squares of random colors to guess. This is the default mode of play.</p>
             </div>
         </div>
         <div class="project different">
@@ -79,29 +110,34 @@
             </div>
             <div class="project-desc"></div>
         </div>
+            </div>
+        <br>
+        <br>
     </div>
-
-    <div id="contact" class="contact">
+    <div id="contact" class="contact hero is-large has-background-link" style="padding-bottom: 2rem;">
         <div class="container">
-            <header>
-                <h1>Contact</h1>
-            </header>
-            <form action="https://formspree.io/xqkynqeg" method="POST">
-                <label>
+                <h1 class="title is-1 has-text-white mt-4">Contact Me!</h1>
+            <form action="https://formspree.io/xqkynqeg" method="POST" class="form">
+                <label class="subtitle has-text-white is-5">
                     Your Name:
                     <input type="text" name="name" class="input">
                 </label>
-                <label>
+                <label class="subtitle has-text-white is-5">
                     Your Email:
                     <input type="email" name="_replyto" class="input">
                 </label>
-                <label>
+                <label class="subtitle has-text-white is-5">
                     Message:
                     <textarea type="text" name="message" class="input" cols="500"></textarea>
                 </label>
-                <button type="submit">Send!</button>
+                <button class="button is-primary is-medium has-text-white mt-4" type="submit">Send!</button>
             </form>
         </div>
     </div>
+    <footer class="footer has-background-dark" style="padding-bottom: 2rem;">
+        <div class="content has-text-centered">
+          <p class="subtitle has-text-white is-3">&copy; 2023 by ishaan and ruhan because he literally made this website anyway bye 👋</p>
+        </div>
+      </footer>
 </body>
 </html>
